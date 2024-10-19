@@ -1,0 +1,42 @@
+.footer {
+    padding: 56px 0 40px;
+    background-color: #212121;
+    color: #C6C7C8;
+    font-size: 14px;
+    &__copyrights {
+        display: flex;
+        align-items: center;
+    }
+    &__img {
+        margin-right: 12px;
+    }
+    &__text {
+        margin-top: 8px;
+    }
+}
+
+@media (min-width: 480px) {
+    .footer {
+        padding: 64px 0 48px;
+        &__text {
+            margin-top: 18px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        padding: 80px 0 64px;
+        &__text {
+            width: 224px;
+        }
+    }
+}
+
+@media (min-width: 1240px) {
+    .footer {
+        &__text {
+            width: 368px;
+        }
+    }
+}
