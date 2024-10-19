@@ -15,19 +15,52 @@
     <main>
         <section class="promo">
             <div class="container">
-                <img src="images/logo.svg"
-                    alt="Логотип Dr.WEB"
-                    class="promo__logo">
+                <img class="promo__logo"
+                    src="images/logo.svg"
+                    alt="Логотип Dr.WEB">
                 <h1 class="promo__title">Защити свой цифровой мир</h1>
                 <p class="promo__descr">с Dr.Web Security Space для Android</p>
-                <button class="promo__btn">Купить со скидкой</button>
-                <img src="images/promo/main-320.png"
+                <a href="#product" class="promo__btn btn">Купить со скидкой</a>
+                <img class="promo__img"
+                    src="images/promo/main-320.png"
                     srcset="images/promo/main-320.png 320w,
                             images/promo/main-480.png 480w,
                             images/promo/main-768.png 768w,
                             images/promo/main.png 1240w"
-                    alt="Экран телефона Android с плашкой -20%"
-                    class="promo__img">
+                    alt="Экран телефона Android с плашкой -20%">
+            </div>
+        </section>
+
+        <section class="product">
+            <div class="container">
+                <div class="product__wrapper">
+                    <div class="product__info">
+                        <p class="product__date">С 1 по 15 февраля 2023 года</p>
+                        <h2 class="product__title">Dr.Web Security Space для Android</h2>
+                        <ul class="product__list">
+                            <li class="product__item">2 устройства</li>
+                            <li class="product__item">12 месяцев</li>
+                        </ul>
+                        <p class="product__descr">Сохранит в безопасности важные документы, онлайн-банкинг, личные переписки, доступ к социальным сетям и вашим контактам</p>
+                        <a href="#" class="product__link">Условия акции</a>
+                    </div>
+
+                    <div id="product" class="product__card">
+                        <img class="product__img"
+                            src="images/product/shield.png"
+                            alt="Щит с рисунком телефона по центру">
+                        <h3 class="product__subtitle">Dr.Web Security Space</h3>
+                        <p class="product__text">Защита мобильных устройств и планшетов</p>
+                        <div class="product__card-wrapper">
+                            <div class="product__price">
+                                <p class="product__price-old">980 ₽</p>
+                                <p class="product__price-new">784 ₽</p>
+                            </div>
+                            <p class="product__price-text">без НДС</p>
+                        </div>
+                        <a class="product__btn btn">Купить со скидкой</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

@@ -1,0 +1,145 @@
+.product {
+    margin-top: 24px;
+    padding: 40px 0;
+    background-color: $bg-dark;
+    &__info {
+        color: $white;
+    }
+    &__date {
+        color: $primary;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    &__title {
+        margin-top: 32px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    &__list {
+        margin-top: 12px;
+        display: flex;
+        gap: 12px;
+        list-style: none;
+    }
+    &__item {
+        padding: 8px 12px;
+        border-radius: 80px;
+        border: 1px $subtext-dark solid;
+        color: $subtext-dark;
+        font-size: 18px;
+    }
+    &__descr {
+        margin-top: 12px;
+        font-weight: 300;
+    }
+    &__link {
+        display: block;
+        margin-top: 32px;
+    }
+
+    &__card {
+        margin-top: 40px;
+        padding: 40px 32px;
+        border-radius: 10px;
+        background-color: $white;
+    }
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
+    &__subtitle {
+        margin-top: 24px;
+        line-height: 30px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    &__text {
+        margin-top: 8px;
+        color: $subtext;
+    }
+    &__card-wrapper {
+        margin-top: 24px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__price-old {
+        color: #B3B3B3;
+        font-size: 24px;
+        font-weight: 600;
+        text-decoration: line-through;
+    }
+    &__price-new {
+        font-size: 36px;
+        font-weight: 700;
+    }
+    &__price-text {
+        font-size: 14px;
+    }
+    &__btn {
+        margin-top: 24px;
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 480px) {
+    .product {
+        margin-top: 32px;
+        padding: 0;
+        background-color: transparent;
+        &__wrapper {
+            padding: 60px 0;
+            border-radius: 32px;
+            background-color: $bg-dark;
+        }
+        &__info {            
+            padding: 0 25px;
+        }
+        &__card {
+            box-sizing: border-box;
+            margin: 0 auto;
+            margin-top: 80px;
+            max-width: 368px;
+        }
+        &__subtitle {
+            font-size: 24px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .product {
+        &__wrapper {
+            padding: 80px 65px;
+        }
+        &__info {
+            margin: 0 auto;
+            padding: 0;
+            width: 509px;
+        }
+        &__title {
+            font-size: 32px;
+        }
+        &__descr {
+            width: 442px;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (min-width: 1240px) {
+    .product {
+        &__wrapper {
+            padding: 80px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__info {
+            margin: 0;
+        }
+        &__card {
+            margin: 0;
+        }
+    }
+}

@@ -8,6 +8,24 @@
     padding: 0 12px;
 }
 
+.btn {
+    box-sizing: border-box;
+    display: block;
+    padding: 15px 32px;
+    width: 223px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: $primary;
+    color: $white;
+    font-size: 18px;
+    transition: background .3s;
+    &:hover {
+        color: $white;
+        background-color: $hover;
+    }
+}
+
 @media (min-width: 480px) {
     .container {
         padding: 0 16px;
@@ -28,3 +46,4 @@
 }
 
 @import 'blocks/promo';
+@import 'blocks/product';
